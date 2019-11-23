@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="addEvent.css">
+    <link rel="stylesheet" href="samdes.css">
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="stylesheet" type="text/css" href="/Login.css" />
+    <script src="https://kit.fontawesome.com/0ee1a0b888.js"></script>
+    <title>Add Event</title>
+</head>
+
+<body>
+    <a class="backarrowA" href="/dashboard">
+        <i class="fas fa-long-arrow-alt-left backarrow"> </i></a>
+    <div class="eee awesome">ekodiary</div>
+
+    <div id="intro">
+        <div class="tt0">
+            <form action="/addevent" method="POST" enctype="multipart/form-data" id="form0">
+                <div class="addELogo">
+                    Add Event
+                </div>
+                <div class="inner">
+                    <input id="todoUserInput0" style="color: #2d3436;" type="file" name="postImage" class="input1">
+                    <input id="todoUserInput0" style="color: #2d3436;" name="writeup" type="text" placeholder="Write up"
+                        class="input1">
+                    <input id="todoUserInput1" style="color: #2d3436;" name="date" type="date" placeholder="Date"
+                        class="input1">
+                    <input id="todoUserInput2" style="color: #2d3436;" name="time" type="text" placeholder="time"
+                        class="input1">
+                    <input id="todoUserInput3" style="color: #2d3436;" name="location" type="text"
+                        placeholder="location" class="input1">
+                    <button type="submit" class="button bS ovE"
+                        style="border: 1px solid gray; color: gray; background-color: white;">Submit</button>
+                </div>
+                <div id="img21" style="width: 50px; height: 50px;"> </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- <script src="/testDashboard.js"></script>
+    <script src="/indexDashboard.js"></script> -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        if ("<%=success[0]%>") {
+            swal("<%=success[0]%>");
+        }  
+    </script>
+</body>
+
+</html>

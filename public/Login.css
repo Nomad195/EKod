@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes|Kaushan+Script|Old+Standard+TT:400,400i|Srisakdi&display=swap');
+
+
+
+#formultimate{
+    position: absolute;
+    top: 250px;
+    left: 65px;
+}
+
+
+#formultimate1{
+    position: absolute;
+    top: 220px;
+    left: 65px;
+}
+.loginBox{
+    transform: translate(-50px, -50px);
+    width: 350px;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 30;
+}
+
+.loginBox1{
+    transform: translate(-50px, -50px);
+    width: 340px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 30;
+}
+.user{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+.loginBox h3{
+    margin: 0;
+    padding: 0 0 20px;
+    color:#262626;
+    text-align: center;
+}
+
+
+.loginBox1 h3{
+    margin: 0;
+    padding: 0 0 20px;
+    color:#262626;
+    text-align: center;
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox1 input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    z-index: 100;
+} 
+
+.loginBox1 input[type="text"],
+.loginBox1 input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    z-index: 100;
+} 
+
+.loginBox input[type="text"] :focus,
+.loginBox input[type="password"] :focus{
+    border-bottom: 2px solid  #2d3436;
+    color: #2d3436;
+}
+
+.loginBox1 input[type="text"] :focus,
+.loginBox1 input[type="password"] :focus{
+    border-bottom: 2px solid   #2d3436;
+    color: #2d3436;
+    z-index: 100;
+}
+.loginBox .inputBox{
+    position: relative;
+}
+.loginBox1 .inputBox{
+    position: relative;
+}
+.inputBox span{
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+.loginBox1 .inputBox span{
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+.loginBox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #ed292a;
+    color:  #2d3436;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.loginBox1 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #ed292a;
+    color: #2d3436;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#linkSIgn{
+    cursor: pointer;
+}
+.login a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.imged{
+    width: 180px;
+    height: 180px;
+    margin-left: 50px;
+}
+.lefty4adevt{
+    position: absolute;
+    top: 80px;
+    left:50px;
+}
+.abso{
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    width: 300px;
+    height: 500px;
+    background-color: #4cd137;
+}
+
+#email{
+    margin-top: 40px;
+}
+
+.LoginLogo{
+    color: #2d3436;
+margin-top: 10px;
+margin-left: 175px;
+font-family: 'Great Vibes', cursive;
+font-size: 70px;
+background: -webkit-linear-gradient(#2d3436, white);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.lead{
+    position: absolute;
+    top: 370px;
+    left: 170px;
+    color: #2d3436;
+}
+
+.err_msgg{
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    border: 2px solid #c0392b;
+    border-radius: 10px;
+    width: 290px;
+    height: 25px;
+    color: #2d3436;
+}
+
+.pEM{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.suss_msgg{
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    border: 2px solid #44bd32;
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+    color: #2d3436;
+}
+
+.timessSuccess{
+    color: #44bd32;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+#formultimate{
+    top: 200px;
+    left: 600px;
+}
+
+#formultimate1{
+    top: 120px;
+    left: 600px;
+}
+
+.loginBox1{
+    height: 550px;
+}
+
+}

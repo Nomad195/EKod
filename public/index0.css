@@ -1,0 +1,149 @@
+body{
+    overflow: hidden;
+}
+#intro{
+    position: absolute;
+    height: 650px;
+    border: 2px solid #2f3640;
+    width: 150px;
+    display: table;
+    top: -10;
+    left: 550px;
+}
+.kilo{
+    display: none;
+}
+.inner{
+    vertical-align: middle;
+    width: 300px;
+}
+
+.photo{
+display: table-cell;
+width: 100px;
+height: 130px;
+margin: auto;
+border: 1px solid white;
+border-radius: 50px;
+margin-top:30px;
+}
+
+.input1{
+    display:  table-cell;
+    margin-left: 3.5vw;
+    margin-top: 50px;
+    font-size: 15px;
+    border: 0px;
+    color: #2d3436;
+    border-bottom: 1px solid #2d3436;
+    z-index: 100;
+}
+
+#todoUserInput0{
+    margin-top: 40px;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .butt{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .btn {
+      margin-top: 50px;
+      margin-left: 40px;
+    background-color: #27ae60; 
+    color: white; 
+    border: 2px solid white;
+  }
+
+  .button.focus, .button:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.input1.focus, .input1:focus {
+    outline: 0;
+    box-shadow: none!important;
+    background-color: #27ae60;
+    color: #2d3436;
+}
+
+
+
+.custom-file{
+    position: absolute;
+    top: 550px;
+    left: 566px;
+}
+
+
+.btnChoose{
+    background-color: #27ae60; 
+    color: white; 
+    border: 2px solid white;
+}
+
+
+.card45{
+    margin-left: 650px;
+    margin-top: -40px;
+    width: 100px;
+}
+
+#rbtn{
+    margin-top: 0px;
+    margin-left: 105px;
+}
+
+.card45 p{
+    margin-top: 0px;
+    margin-left: 105px;
+}
+#subffm{
+    position: absolute;
+    left: 530px;
+    top: 550px;
+    }
+
+   .genCOl{
+       color: gray;
+       text-decoration: none;
+   }
+
+   a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:gray; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
