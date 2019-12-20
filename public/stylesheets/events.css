@@ -1,0 +1,45 @@
+.grey{
+    position: absolute;
+    top: 450px;
+    left: 90px;
+    color: gray;
+    font-size: 30px;
+}
+
+.form_cover{
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+.filell{
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.submit{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+.enF{
+    margin: 8px 0;
+    border: 2px solid gray;
+  border-radius: 4px;
+  }
+
+  .button {
+    background-color: gray; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+ 
+  

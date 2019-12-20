@@ -263,6 +263,7 @@ background: -webkit-linear-gradient(#3498db, white);
     -webkit-text-stroke-color: #2f3640;
     font-size: 50px;
     font-family: 'CustomFont', serif;
+    cursor: pointer;
   }
   .buttonono:first-child{
       margin-top: 30px;
@@ -611,6 +612,7 @@ z-index: 20;
   
       .awesome {
         -webkit-animation: colorchange 20s infinite alternate;
+        animation: colorchange 20s infinite alternate;
       }
   
       @-webkit-keyframes colorchange {
@@ -650,8 +652,6 @@ z-index: 20;
         }
       }
 
-      .line0{
-
-      }
+      
 
      

@@ -42,6 +42,7 @@
     margin-left: 80px;
     padding: 5px 15px;
     text-align: center;
+    color: gray;
 }
 
 .num2{
@@ -51,7 +52,9 @@
     margin-left: 30px;
     padding: 5px 15px;
     text-align: center;
+    color: gray;
 }
+
 
 .numCasing{
     display: flex;
@@ -61,6 +64,7 @@ margin-top: 60px;
 .numCasing0{
     display: flex;
     margin-top: 30px;
+    margin-left:50px;
 }
 
 .arrowBit{
@@ -71,6 +75,37 @@ margin-top: 60px;
     font-size: 50px;
 }
 
+.arrowBitDec{
+    color: gray;
+    position: absolute;
+    left: 1170px;
+    top: 350px;    
+    font-size: 50px;
+}
+
+.arrowBitDec:hover{
+    font-size: 60px;
+}
+
+.arrowBit:hover{
+    font-size: 60px;
+}
+
+
+.arrowBitDec0{
+    color: gray;
+    position: absolute;
+    left: 290px;
+    top: 350px;    
+    font-size: 50px;
+}
+
+.arrowBitDec0:hover{
+    font-size: 60px;
+}
+
+
+
 .arrowBit0{
     color: gray;
     position: absolute;
@@ -78,3 +113,79 @@ margin-top: 60px;
     top: 350px;    
     font-size: 50px;
 }
+
+.arrowBit0:hover{
+    font-size: 60px;
+}
+
+
+
+
+.eventtAvailCover{
+    position: absolute;
+    background-color:  #c0392b;
+    text-align: center;
+    width: 40px;
+    height: 50px;
+}
+.eventNtAvailChild{
+    color: white;
+    z-index: 40;
+    position: absolute;
+    top: 290px;
+    left: 450px;
+    font-size: 35px
+}
+
+.colchange{
+    color: gray;
+}
+
+.colchange:hover .num2{
+    background-color: rgba(45, 52, 54,0.3);
+    color: white;
+    border: 1px solid white;
+} 
+
+.colchange:hover .num1{
+    background-color: rgba(45, 52, 54,0.3);
+    color: white;
+    border: 1px solid white;
+} 
+
+.pupupCover001{
+    width: 100%;
+    height:100%;
+    background-color: rgba(45, 52, 54,0.5);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 40;
+}
+.pupup{
+    width: 700px;
+    height: 250px;
+    background-color: rgba(214, 48, 49,1.0);
+    margin-left: 300px;
+    margin-top: 185px;
+    border-radius: 5px;
+}
+
+.cancleSign{
+    color: white;
+    margin-top: 17px;
+    margin-left: 23px;
+    font-size: 40px;
+}
+
+
+.circlerization{
+    z-index: 140;
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    position: absolute;
+    top: 205px;
+    left: 915px;
+    border-radius: 50%;
+    }

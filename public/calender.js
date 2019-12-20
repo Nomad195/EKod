@@ -96,7 +96,7 @@ function janFun() {
 
 function janFunleft() {
     jan.style.display = 'none';
-    Feb.style.display = 'block';
+    Feb.style.display = 'none';
     Mar.style.display = 'none';
     Apr.style.display = 'none';
     May.style.display = 'none';

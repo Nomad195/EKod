@@ -1,251 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="/index0.css" />
-    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Playfair+Display&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Playfair+Display|Tinos&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Modak|Playfair+Display|Tinos&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/0ee1a0b888.js"></script>
-    <link rel="stylesheet" href="/samdes.css">
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <link rel="stylesheet" type="text/css" href="/Login.css" />
-    <title>EKo Diary</title>
-    <style>
-        .rundown {
-            color: gray;
-            text-decoration: none;
-        }
+    <link rel='stylesheet' href='/stylesheets/events.css' />
 
-        .rundown:hover {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-    </script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
-    </script>
-    <script>
-        $(document).ready(function () {
-            var a10 = $(".a10");
-            var a11 = $(".a11");
-            var a12 = $(".a12");
-            var a13 = $(".a13");
-            var a14 = $(".a14");
-            var a15 = $(".a15");
-            var a16 = $(".a16");
-            var bodyCover = $("#bodyCover");
-            $(".bullseye").click(function () {
-                $("#sidebar00").fadeIn().effect("bounce", { distance: 60, times: 12 }, 3000);
-                a13.fadeIn().effect("bounce", { direction: 'up', distance: 80, times: 12 }, 4000);
-                a14.fadeIn().effect("bounce", { direction: 'up', distance: 60, times: 12 }, 4000);
-                a15.fadeIn().effect("bounce", { direction: 'up', distance: 40, times: 12 }, 4000);
-                a16.fadeIn().effect("bounce", { direction: 'up', distance: 30, times: 12 }, 4000);
-            });
-
-            bodyCover.click(function () {
-                $("#sidebar00").fadeOut(1)
-            });
-        });
-    </script>
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="line0"></div>
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-    <div class="eee awesome">ekodiary</div>
-
-
-    <div id="sidebar0011">
-        <div style="width: 200px;" class="a13"><a id="dos2" href="/addevent"><i class="far fa-calendar-alt"></i>
-                Add Event</a></div>
-        <div style="width: 200px;" class="a14"><a class="a14" id="dos3" href="/logout"><i
-                    class="fas fa-sign-in-alt"></i>
-                logout</a></div>
-        <div id="dos5" style="width: 200px;" class="a16"><i style="font-size: 20px;" class="fas fa-home"
-                style="font-size: 15px;"></i> Home</div>
-    </div>
-
-
-    <!--         
-    <i class="fas fa-bullseye bullseye"></i>
-    <div id="sidebar00" style="display: none;">
-        <div id="dos2" style="width: 200px;" class="a13 uul"><a class="a13 uul" style="width: 200px;"
-                href="/addevent"><i class="far fa-calendar-alt event00"></i> Add Event</a></div>
-        <div id="dos3" style="width: 200px;" class="a14 uul"><a class="a14 uul" style="width: 200px;" href="/logout"><i
-                    class="fas fa-sign-out-alt event00"></i>
-                logout</a></div>
-        <div id="dos5" style="width: 200px;" class="a16 uul"><i class="fas fa-home event00"></i> Home</div>
-    </div>
-    <div id="toggle-btn" onclick="toggleSidebar()" style="display: none;">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div> -->
-
-
-
-    <!-- <div class="nav__">
-        <h3 class="brand">EKo DIary</h3>
-
-         <ul class="nav_unordered">
-            <li><i class="fas fa-home" style="color: #6F1E51;"></i><a href="/" class="rundown fg"> Home</a></li>
-            <li><i class="fas fa-ticket-alt" style="color: #ED4C67;"></i><a href="/ticketting"
-                    class="rundown fg">ticketting</a></li>
-            <li><i class="far fa-hand-point-right" style="color: #C4E538;"></i><a href="/recomendation"
-                    class="rundown fg">recomendation</a>
-            </li>
-            <li><i class="far fa-address-card" style="color: #EE5A24"></i><a href="/About_us" class="rundown fg">About
-                    Us</a></li>
-            <li><i class="fas fa-plus" style="color: #006266"></i><a href="/addevent" class="rundown fg">Add Event</a>
-            </li>
-            <li><i class="fas fa-sign-in-alt" style="color: #F79F1F"></i><a class="alogin fg"
-                    href="/login/users">Login</a>
-            </li>
-            <li><i class="far fa-user" style="color: #B33771"></i><a class="areg fg" href="/register">Register</a> 
-            </li>
-        </ul>
-    </div> -->
-    <!-- <div class="landing">
-    </div>
-    <div class="land00">
-        <h3 class="landing0">Eko Diary</h3>
-        <button class="landing1">Get Started</button>
-    </div> -->
-
-    <div id="bodyCover">
-        <div id="killX0" class="heaedcover killMX0">
-
-            <div class="header01">
-                <i class="far fa-arrow-alt-circle-right arrowright"></i>
-                <h4 class="textedit00">Featured</h4>
-                <% for (let i = 0; i < featured.length; i++) { %>
-                <div class="list_group_item" style="margin-top: 50px;">
-                    <img class="incumImg" src="<%- featured[i].postImage %>" alt="image">
-                    <ul class="ul_">
-                        <li style="color: gray;">
-                            <%- featured[i].writeup %>
-                        </li>
-                        <li style="color: gray;">
-                            <%- featured[i].date %>
-                        </li>
-                        <li style="color: gray;">
-                            <%- featured[i].time %>
-                        </li>
-                        <li style="color: gray;">
-                            <%- featured[i].location %>
-                        </li>
-                    </ul>
-                </div>
-                <% } %>
-            </div>
-            <div class="header02 kilo">
-                <i class="far fa-arrow-alt-circle-left  arrowleft"></i>
-                <h4 class=" textedit00">Non-Featured</h4>
-                <% for (let i = 0; i < nonfeatured.length; i++) { %>
-                <div class="list_group_item" style="margin-top: 50px;">
-                    <img class="incumImg" src="<%- nonfeatured[i].postImage %>" alt="image">
-                    <ul class="ul_">
-                        <li style="color: gray;">
-                            <%- nonfeatured[i].writeup %>
-                        </li>
-                        <li style="color: gray;">
-                            <%- nonfeatured[i].date %>
-                        </li>
-                        <li style="color: gray;">
-                            <%- nonfeatured[i].time %>
-                        </li>
-                        <li style="color: gray;">
-                            <%- nonfeatured[i].location %>
-                        </li>
-                    </ul>
-                </div>
-                <% } %>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer0">
-        <p> Contact us on (07014740355)</p>
-        <div class="allSN">
-            <i class="fab fa-instagram insta"></i>
-            <i class="fab fa-twitter twitt"></i>
-            <i class="fab fa-facebook-f"></i>
-        </div>
-    </div>
-
-
-
-    <!-- Optional JavaScript
-                    -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-    <!-- Bootstrap Jquery -->
-
-    <script src="/test.js"></script>
-    <script src="../index.js"></script>
-
-
-
-
-    <script>
-        // setTimeout(timecallBack, 1000);
-        // setTimeout(dateCallBack, 1000);
-        // var textedit0 = document.querySelector(".textedit0");
-
-
-        // setInterval(timecallBack, 5000);
-        // setInterval(dateCallBack, 5000);
-
-        // function timecallBack() {
-        //     textedit0.innerHTML = ' ';
-        //     var day = new Date();
-        //     var currentDay = day.getDay();
-
-        //     if (currentDay === 0) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Sunday' + ' ');
-        //     } else if (currentDay === 1) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Monday' + ' ');
-        //     } else if (currentDay === 2) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Tuesday' + ' ');
-        //     } else if (currentDay === 3) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Wednesday' + ' ');
-        //     } else if (currentDay === 4) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Thursday' + ' ');
-        //     } else if (currentDay === 5) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Frday' + ' ');
-        //     } else if (currentDay === 6) {
-        //         textedit0.insertAdjacentHTML('beforeend', 'Saturday' + ' ');
-        //     }
-        // }
-
-
-        // function dateCallBack() {
-        //     var date = new Date();
-        //     var currentDate = date.getDate();
-        //     textedit0.insertAdjacentHTML('beforeend', currentDate);
-        // }
-
-
-
-
-
-        /*
-  Reference: https://css-tricks.com/restart-css-animation/
-*/
-    </script>
-
+    <i class="fab fa-centercode grey"></i>
+    <form id="emailFilefm" style="display: none;" class="form_cover" id="eventForm" method="POST" action=""
+        enctype="multipart/form-data">
+        <input type="email" required class="enF" name="email">
+        <input class="filell" name="postImage" type="file">
+        <input class="submit button" type="submit" value="Submit">
+    </form>
 </body>
+
+<script>
+    gray = document.querySelector(".grey");
+    emailFilefm = document.querySelector("#emailFilefm");
+    let pathName = window.location.pathname;
+    gray.addEventListener("click", opeEvil);
+
+    function opeEvil() {
+        if (emailFilefm.style.display === "none") {
+            emailFilefm.style.display = "block";
+        } else {
+            emailFilefm.style.display = "none";
+        }
+    }
+    document.getElementById("eventForm").action =
+        pathName
+
+</script>
 
 </html>

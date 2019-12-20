@@ -5,17 +5,13 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require("mongoose");
 const session = require("express-session");
-const passport = require("passport");
-const MongoStore = require("connect-mongodb-session")(session);
 const flash = require("express-flash");
 const dotenv = require("dotenv");
-const methodOverride = require("method-override");
 
 dotenv.config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-require("./config/passport");
 
 var app = express();
 
@@ -28,23 +24,20 @@ mongoose.connect(db_uri, { useNewUrlParser: true, useCreateIndex: true, useUnifi
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(methodOverride('_method'))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(session({
+    cookie: { maxAge: 60000 },
+    secret: 'woot',
+    resave: false,
+    saveUninitialized: false
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({
-    secret: "mysecrect",
-    resave: true,
-    saveUninitialized: true,
-    store: new MongoStore({ uri: db_uri, collection: "app_sessions" })
-}));
 
 app.use(flash());
-app.use(passport.initialize());
-app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -66,3 +59,4 @@ app.use(function (err, req, res, next) {
 });
 
 module.exports = app;
+
