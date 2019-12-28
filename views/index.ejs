@@ -92,111 +92,7 @@
 
         </div>
     </div>
-    <%if (noEvent) { %>
-    <div class="eventNtAvailChild"> <%=noEvent%> </div>
-    <% } %>
 
-    <!-- <% include ./partials/messages %> -->
-
-    <!-- <i class="fas fa-bullseye bullseye"></i>
-    <div id="sidebar00" style="display: none;">
-        <div id="dos2" style="width: 200px;" class="a13 uul"><a class="a13 uul" style="width: 200px;"
-                href="/login/users"><i class="far fa-calendar-alt event00"></i> Add Event</a></div>
-        <div id="dos3" style="width: 200px;" class="a14 uul"><a class="a14 uul" style="width: 200px;"
-                href="/login/users"><i class="fas fa-sign-in-alt event00"></i>
-                login</a></div>
-        <div id="dos4" style="width: 200px;" class="a15 uul"><a class="a15 uul" style="width: 200px;"
-                href="/register"><i class="far fa-registered event00"></i>
-                Register</a></div>
-        <div id="dos5" style="width: 200px;" class="a16 uul"><i class="fas fa-home event00"></i> Home</div>
-    </div>
-    <div id="toggle-btn" onclick="toggleSidebar()" style="display: none;">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div> -->
-
-
-
-    <!-- <div class="nav__">
-        <h3 class="brand">EKo DIary</h3>
-
-         <ul class="nav_unordered">
-            <li><i class="fas fa-home" style="color: #6F1E51;"></i><a href="/" class="rundown fg"> Home</a></li>
-            <li><i class="fas fa-ticket-alt" style="color: #ED4C67;"></i><a href="/ticketting"
-                    class="rundown fg">ticketting</a></li>
-            <li><i class="far fa-hand-point-right" style="color: #C4E538;"></i><a href="/recomendation"
-                    class="rundown fg">recomendation</a>
-            </li>
-            <li><i class="far fa-address-card" style="color: #EE5A24"></i><a href="/About_us" class="rundown fg">About
-                    Us</a></li>
-            <li><i class="fas fa-plus" style="color: #006266"></i><a href="/addevent" class="rundown fg">Add Event</a>
-            </li>
-            <li><i class="fas fa-sign-in-alt" style="color: #F79F1F"></i><a class="alogin fg"
-                    href="/login/users">Login</a>
-            </li>
-            <li><i class="far fa-user" style="color: #B33771"></i><a class="areg fg" href="/register">Register</a> 
-            </li>
-        </ul>
-    </div> -->
-    <!-- <div class="landing">
-    </div>
-    <div class="land00">
-        <h3 class="landing0">Eko Diary</h3>
-        <button class="landing1">Get Started</button>
-    </div> -->
-
-    <!-- <div id="bodyCover">
-        <div id="killX0" class="heaedcover killMX0">
-
-            <div class="header01">
-                <i class="far fa-arrow-alt-circle-right arrowright"></i>
-                <h4 class="textedit00">Featured</h4>
-                <% for (let i = 0; i < featured.length; i++) { %>
-    <div class="list_group_item" style="margin-top: 0px;">
-        <img class="incumImg" src="<%- featured[i].postImage %>" alt="image">
-        <ul style="color: gray;" class="ul_">
-            <li style="color: gray;">
-                <%- featured[i].writeup %>
-            </li>
-            <li style="color: gray;">
-                <%- featured[i].date %>
-            </li>
-            <li style="color: gray;">
-                <%- featured[i].time %>
-            </li>
-            <li style="color: gray;">
-                <%- featured[i].location %>
-            </li>
-        </ul>
-    </div>
-    <% } %>
-    </div>
-    <div class="header02 kilo">
-        <i class="far fa-arrow-alt-circle-left  arrowleft"></i>
-        <h4 class=" textedit00">Non-Featured</h4>
-        <% for (let i = 0; i < nonfeatured.length; i++) { %>
-        <div class="list_group_item">
-            <img class="incumImg" src="<%- nonfeatured[i].postImage %>" alt="image">
-            <ul class="ul_">
-                <li style="color: gray;">
-                    <%- nonfeatured[i].writeup %>
-                </li>
-                <li style="color: gray;">
-                    <%- nonfeatured[i].date %>
-                </li>
-                <li style="color: gray;">
-                    <%- nonfeatured[i].time %>
-                </li>
-                <li style="color: gray;">
-                    <%- nonfeatured[i].location %>
-                </li>
-            </ul>
-        </div>
-        <% } %>
-    </div>
-    </div>
-    </div> -->
 
     <div id="jan" class="calenderCoverCover">
         <div class="Calendercover">
@@ -1135,9 +1031,9 @@
     <script>
         var cancleSign = document.querySelector(".cancleSign");
         var featured = '<%-newFeatured%>'.split(',')
-        var nonFeatured = '<%-newNonFeatured%>'.split(',')
-        let joinFF = featured.concat(nonFeatured);
-        let joinF = Array.from(new Set(joinFF));
+        // var nonFeatured = []
+        // let joinFF = featured.concat(nonFeatured);
+        // let joinF = Array.from(new Set(joinFF));
         var pupupCover001 = document.querySelector(".pupupCover001");
         var eventNtAvailChild = document.querySelector(".eventNtAvailChild").innerText;
 

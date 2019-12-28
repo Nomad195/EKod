@@ -5,6 +5,7 @@ let EventSchema = new Schema({
     postImage: { type: String },
     publicid: { type: String },
     month: { type: String },
+    email: { type: String },
     day: { type: String },
     createdDate: {
         type: Date,

@@ -227,34 +227,10 @@
   top: 100px;
   left: 50px;
 }
-.list_group_item{
-    width: 790px;
-    height: 270px;
-    margin-left: 290px;
-    display: flex;
-    border: 10px solid;
-  border-image-source: linear-gradient(45deg,rgba(61, 61, 61,1.0), rgba(61, 61, 61,1.0));
-  border-image-slice: 1;
-  background: transparent;
-    margin-top: 300px;
-    color: white;
-    border-radius: 1%;
-    box-shadow:  5px 5px 8px #d1d8e0, 10px 10px 8px #d1d8e0, 15px 15px 8px #d1d8e0;
-    z-index: 40;
-}
 
 
-.list_group_item2{
-    width: 790px;
-    height: 210px;
-    margin-left: 290px;
-    display: flex;
-    background: linear-gradient(110deg, #c0392b 60%, #e74c3c 60%);
-    margin-top: 20px;
-    color: white;
-    border-radius: 10px;
-    z-index: 40;
-}
+
+
 .list_group{
     flex-basis: 40%;
     margin-top: 20px;

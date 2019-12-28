@@ -1,42 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/index0.css" />
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Playfair+Display|Tinos&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri|Modak|Playfair+Display|Tinos&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/imageGallary.css" />
+    <link rel="stylesheet" type="text/css" href="/lightbox.min.css" />
+    <script src="/lightbox-plus-jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0ee1a0b888.js"></script>
-    <link rel='stylesheet' href='/stylesheets/events.css' />
+    <link rel="stylesheet" href="/samdes.css">
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="stylesheet" type="text/css" href="/Login.css" />
+    <title>EKo Diary</title>
+    <style>
+        .rundown {
+            color: gray;
+            text-decoration: none;
+        }
 
-    <title>Document</title>
+        .rundown:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <i class="fab fa-centercode grey"></i>
-    <form id="emailFilefm" style="display: none;" class="form_cover" id="eventForm" method="POST" action=""
-        enctype="multipart/form-data">
-        <input type="email" required class="enF" name="email">
-        <input class="filell" name="postImage" type="file">
-        <input class="submit button" type="submit" value="Submit">
-    </form>
-</body>
+    <div class="eee awesome" onclick="location.href='/';" style="z-index: 100;">ekodiary</a></div>
+    <div id="bodyCover" style="z-index: 50;">
+        <div id="killX0" class="heaedcover killMX0">
 
-<script>
-    gray = document.querySelector(".grey");
-    emailFilefm = document.querySelector("#emailFilefm");
-    let pathName = window.location.pathname;
-    gray.addEventListener("click", opeEvil);
+            <div class="header01">
+                <div id="wider"></div>
+                <center>
+                    <i class="fab fa-centercode grey"></i>
+                    <form id="emailFilefm" style="display: none;" class="form_cover" id="eventForm" method="POST"
+                        action="" enctype="multipart/form-data">
+                        <input type="email" required class="enF inputgenClass" name="email">
+                        <input class="filell" name="postImage" type="file">
+                        <input class="submit buttonWide0" type="submit" value="Submit">
+                    </form>
+                </center>
+                <div class="gallery">
+                    <% for (let i = 0; i < featured.length; i++) { %>
+                    <div class="list_group_item">
+                        <a id="valuee" href="<%- featured[i].postImage %>" data-lightbox="mygallery"><img class="imgfit"
+                                src="<%- featured[i].postImage %>" alt="image"></a>
+                        <ul class="ul_">
+                            <li id="txash"><button class="buttonWide"> Delete</button></li>
+                            <li id="deleteBtn" style="display: none">
+                                <form action="/deleteEvent/<%- month %>/<%- day %>?_method=DELETE" method="POST">
+                                    <input type="hidden" name="id" value="<%- featured[i]._id %>">
+                                    <input type="hidden" name="publicid" value="<%- featured[i].publicid %>">
+                                    <input id="delete" onclick="deleteData()" type="submit" class="buttonono0"
+                                        value="delete">
+                                </form>
+                            </li>
 
-    function opeEvil() {
-        if (emailFilefm.style.display === "none") {
-            emailFilefm.style.display = "block";
-        } else {
-            emailFilefm.style.display = "none";
+                            <li style="display: none"> <input type="text" id="clientMail"
+                                    value='<%- featured[i].email %>'>
+                            </li>
+                            <li>
+                                <input type="text" id="verifyMail" onkeyup="checkMail()"
+                                    placeholder="Enter your email to verify">
+                            </li>
+                        </ul>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer0">
+        <p> Contact us on (07014740355)</p>
+        <div class="allSN">
+            <i class="fab fa-instagram insta"></i>
+            <i class="fab fa-twitter twitt"></i>
+            <i class="fab fa-facebook-f"></i>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript
+                    -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <!-- Bootstrap Jquery -->
+
+    <script src="/test.js"></script>
+    <script src="../index.js"></script>
+
+
+    <script>
+
+    </script>
+    <script>
+        // setTimeout(timecallBack, 1000);
+        // setTimeout(dateCallBack, 1000);
+        // var textedit0 = document.querySelector(".textedit0");
+
+
+        // setInterval(timecallBack, 5000);
+        // setInterval(dateCallBack, 5000);
+
+        // function timecallBack() {
+        //     textedit0.innerHTML = ' ';
+        //     var day = new Date();
+        //     var currentDay = day.getDay();
+
+        //     if (currentDay === 0) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Sunday' + ' ');
+        //     } else if (currentDay === 1) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Monday' + ' ');
+        //     } else if (currentDay === 2) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Tuesday' + ' ');
+        //     } else if (currentDay === 3) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Wednesday' + ' ');
+        //     } else if (currentDay === 4) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Thursday' + ' ');
+        //     } else if (currentDay === 5) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Frday' + ' ');
+        //     } else if (currentDay === 6) {
+        //         textedit0.insertAdjacentHTML('beforeend', 'Saturday' + ' ');
+        //     }
+        // }
+
+
+        // function dateCallBack() {
+        //     var date = new Date();
+        //     var currentDate = date.getDate();
+        //     textedit0.insertAdjacentHTML('beforeend', currentDate);
+        // }
+
+
+
+
+        /*
+  Reference: https://css-tricks.com/restart-css-animation/
+*/
+
+        var buttonWide = document.querySelector(".buttonWide");
+        var verifyMail = document.querySelector("#verifyMail");
+        var wider = document.querySelector("#wider");
+        gray = document.querySelector(".grey");
+        emailFilefm = document.querySelector("#emailFilefm");
+        let pathName = window.location.pathname;
+        gray.addEventListener("click", opeEvil);
+        buttonWide.addEventListener("click", clickkeffect);
+        wider.addEventListener("click", widereffect);
+
+
+        function clickkeffect() {
+            verifyMail.style.display = "block";
         }
-    }
-    document.getElementById("eventForm").action =
-        pathName
 
-</script>
+        function widereffect() {
+            console.log("deleted")
+            verifyMail.style.display = "none";
+        }
+        function opeEvil() {
+            if (emailFilefm.style.display === "none") {
+                emailFilefm.style.display = "block";
+            } else {
+                emailFilefm.style.display = "none";
+            }
+        }
+        document.getElementById("eventForm").action =
+            pathName
+
+        function checkMail() {
+            let inputedMail = document.getElementById("verifyMail").value
+            let clientMail = document.getElementById("clientMail").value
+
+            if (clientMail === inputedMail) {
+                document.getElementById("deleteBtn").style.display = "block"
+                document.getElementById("verifyMail").style.display = "none"
+                document.querySelector(".buttonWide").style.display = "none"
+
+            }
+        }
+
+        $("verifyMail").keyup(function () {
+            checkMail()
+        });
+    </script>
+
+</body>
 
 </html>

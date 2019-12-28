@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const flash = require("express-flash");
 const dotenv = require("dotenv");
+const methodOverride = require("method-override");
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ mongoose.connect(db_uri, { useNewUrlParser: true, useCreateIndex: true, useUnifi
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(methodOverride('_method'))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

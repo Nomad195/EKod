@@ -3,6 +3,7 @@ const router = express.Router();
 const path = require('path');
 const mongoose = require("mongoose");
 const multer = require("multer");
+const methodOverride = require("method-override");
 const cloudinary = require("cloudinary");
 const cloudinaryStorage = require("multer-storage-cloudinary");
 
@@ -54,16 +55,22 @@ const upload = multer({ storage: storage, fileFilter: checkFileType("images") })
 
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Express' });
+router.get('/', async function (req, res, next) {
+    let newFeatured = await Event.find().exec()
+
+    res.render('index', { newFeatured })
 });
 
-router.get('/events/1/1', function (req, res, next) {
-    res.render('events');
+router.get('/event/:month/:day', async function (req, res, next) {
+    let month = req.params.month;
+    let day = req.params.day
+    let featured = await Event.find({ month: month, day: day }).exec()
+    console.log(featured)
+    
+    res.render('events', { featured, month, day });
 });
 
-router.post('/events/:month/:day', (req, res, next) => {
-    console.log(req.file)
+router.post('/event/:month/:day', upload.single('postImage'), (req, res, next) => {
     let month = req.params.month;
     let day = req.params.day;
 
@@ -79,13 +86,25 @@ router.post('/events/:month/:day', (req, res, next) => {
         .then(result => {
             console.log(result)
             req.flash("success", "Event uploaded successfully");
-            res.redirect(`/events/${month}/${day}`);
+            res.redirect(`/event/${month}/${day}`);
         })
         .catch(err => {
             console.log('error during upload')
         })
 })
 
+//teacher deletes a particular lecture 
+router.delete('/deleteEvent/:month/:day', (req, res, next) => {
+     let month = req.params.month;
+    let day = req.params.day;
+    cloudinary.v2.uploader.destroy(req.body.publicid, function (result) {
+        Event.remove({ _id: req.body.id })
+            .then((doc) => {
+                console.log(doc)
+                res.redirect(`/event/${month}/${day}`)
+            })
+    })
+})
 
 
 module.exports = router;
